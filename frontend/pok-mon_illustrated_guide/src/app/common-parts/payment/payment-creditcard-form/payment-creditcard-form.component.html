@@ -1,0 +1,10 @@
+<div>
+  <form (ngSubmit)="pay()">
+    <ng-container *ngIf="clientSecret">
+      <ngx-stripe-payment [clientSecret]="clientSecret">
+      </ngx-stripe-payment>
+      <button>支払う</button>
+    </ng-container>
+  </form>
+</div>
+

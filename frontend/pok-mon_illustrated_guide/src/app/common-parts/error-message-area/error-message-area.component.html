@@ -1,0 +1,6 @@
+<div *ngIf="errorMessage" class="error-response-message">
+  <div *ngIf="errorMessage.code">
+    <p>{{ errorMessage.code }}</p>
+  </div>
+  <p>{{ errorMessage.message }}</p>
+</div>

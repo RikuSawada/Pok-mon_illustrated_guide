@@ -1,0 +1,37 @@
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>サービス</mat-label>
+    <input
+      type="text"
+      matInput
+      #InputField="matInput"
+      [formControl]="myControl"
+      [matAutocomplete]="auto"
+    />
+    <mat-icon matSuffix>
+      {{ InputField.focused ? 'expand_less' : 'expand_more' }}
+    </mat-icon>
+    <mat-autocomplete
+      autoActiveFirstOption
+      #auto="matAutocomplete"
+      [displayWith]="autoCompleteDisplayFn"
+      (closed)="onCloseAutoCompleteOptions()"
+    >
+      <ng-container *ngIf="filteredOptions | async as filtered">
+        <ng-container *ngIf="filtered.length === 1 && filtered[0].id === -1; else normalOptions">
+          <mat-option disabled>該当するものがありません</mat-option>
+        </ng-container>
+        <ng-template #normalOptions>
+          <mat-optgroup *ngFor="let employee of filteredOptions | async" [label]="employee.name">
+            <mat-option *ngFor="let feature of employee.features" [value]="feature">
+              <img [src]="feature.iconPath" class="icon"
+                   style="vertical-align:middle; margin-right:8px;">{{
+                feature.name || employee.name
+              }}
+            </mat-option>
+          </mat-optgroup>
+        </ng-template>
+      </ng-container>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

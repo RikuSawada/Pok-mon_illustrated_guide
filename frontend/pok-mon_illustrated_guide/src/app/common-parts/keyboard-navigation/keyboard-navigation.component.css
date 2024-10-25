@@ -1,0 +1,9 @@
+.autocomplete {
+  width: 50%;
+  margin-top: 350px;
+}
+
+.icon {
+  width: 24px; /* アイコンの幅 */
+  height: 24px; /* アイコンの高さ */
+}

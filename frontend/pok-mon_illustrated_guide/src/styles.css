@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.error-message {
+  color: red;
+  background-color: #ffe3e3;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.error-message::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  border-width: 0 5px 5px;
+  border-style: solid;
+  border-color: transparent transparent #ffe3e3 transparent;
+}
+
+/* エラーメッセージのスタイル */
+.error-response-message {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  border: 1px solid #D8000C;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.dark-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}

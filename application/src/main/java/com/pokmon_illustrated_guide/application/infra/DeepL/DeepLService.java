@@ -3,12 +3,12 @@ package com.pokmon_illustrated_guide.application.infra.DeepL;
 import com.deepl.api.DeepLException;
 import com.deepl.api.TextResult;
 import com.deepl.api.Translator;
-import com.pokmon_illustrated_guide.application.domain.service.ISampleService;
+import com.pokmon_illustrated_guide.application.domain.service.IDeepLService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
-public class DeepLService implements ISampleService {
+public class DeepLService implements IDeepLService {
 
   Translator translator;
 

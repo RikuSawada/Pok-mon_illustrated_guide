@@ -1,0 +1,111 @@
+<div>
+  <h3>ご登録の氏名を使用しますか？</h3>
+  <form [formGroup]="useRegisteredNameForm">
+    <label>
+      <input type="radio" formControlName="option" value="0">
+      はい
+    </label>
+    <label>
+      <input type="radio" formControlName="option" value="1">
+      いいえ
+    </label>
+  </form>
+
+  <!-- "いいえ"を選択した場合のみフォームを表示 -->
+  <div *ngIf="useRegisteredNameForm.value.option === '1'">
+    <form [formGroup]="nameForm">
+      <div class="mb-3">
+        <label class="form-label" for="firstName">姓</label>
+        <input class="form-control" id="firstName" type="text" formControlName="firstName">
+        <div *ngIf="nameForm.get('firstName')?.errors && nameForm.get('firstName')?.touched"
+             class="error-message">
+          <span *ngIf="nameForm.get('firstName')?.errors?.['required']">姓を入力してください</span>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="lastName">名</label>
+        <input class="form-control" id="lastName" type="text" formControlName="lastName">
+        <div *ngIf="nameForm.get('lastName')?.errors && nameForm.get('lastName')?.touched"
+             class="error-message">
+          <span *ngIf="nameForm.get('lastName')?.errors?.['required']">名を入力してください</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div>
+  <h3>ご登録の住所を使用しますか？</h3>
+  <form [formGroup]="useRegisteredAddressForm">
+    <label>
+      <input type="radio" formControlName="option" value="0">
+      はい
+    </label>
+    <label>
+      <input type="radio" formControlName="option" value="1">
+      いいえ
+    </label>
+  </form>
+
+  <!-- "いいえ"を選択した場合のみフォームを表示 -->
+  <div *ngIf="useRegisteredAddressForm.value.option === '1'">
+    <form [formGroup]="addressForm">
+      <div class="mb-3">
+        <label class="form-label" for="postalCode">郵便番号</label>
+        <input class="form-control" id="postalCode" type="text" formControlName="postalCode">
+        <div *ngIf="addressForm.get('postalCode')?.errors && addressForm.get('postalCode')?.touched"
+             class="error-message">
+          <span
+            *ngIf="addressForm.get('postalCode')?.errors?.['required']">郵便番号を入力してください</span>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="prefecture">都道府県</label>
+        <input class="form-control" id="prefecture" type="text" formControlName="prefecture">
+        <div *ngIf="addressForm.get('prefecture')?.errors && addressForm.get('prefecture')?.touched"
+             class="error-message">
+          <span
+            *ngIf="addressForm.get('prefecture')?.errors?.['required']">都道府県を入力してください</span>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="city">市区町村</label>
+        <input class="form-control" id="city" type="text" formControlName="city">
+        <div *ngIf="addressForm.get('city')?.errors && addressForm.get('city')?.touched"
+             class="error-message">
+          <span
+            *ngIf="addressForm.get('city')?.errors?.['required']">市区町村を入力してください</span>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="townAndStreet">番地</label>
+        <input class="form-control" id="townAndStreet" type="text" formControlName="townAndStreet">
+        <div
+          *ngIf="addressForm.get('townAndStreet')?.errors && addressForm.get('townAndStreet')?.touched"
+          class="error-message">
+          <span
+            *ngIf="addressForm.get('townAndStreet')?.errors?.['required']">番地を入力してください</span>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="buildingName">建物名</label>
+        <input class="form-control" id="buildingName" type="text" formControlName="buildingName">
+      </div>
+    </form>
+  </div>
+</div>
+<div>
+  <!--@todo  APIから取得してくる-->
+  <h3>お支払い方法を選択してください</h3>
+  <form [formGroup]="paymentMethodForm">
+    <label>
+      <input type="radio" formControlName="paymentMethod" value="1">
+      クレジットカード
+    </label>
+  </form>
+</div>
+<div>
+  <button type="submit" (click)="onSubmit()"
+          [disabled]="useRegisteredNameForm.value.option === 1 && !nameForm.valid || useRegisteredAddressForm.value.option === 1 && !addressForm.valid">
+    支払いへ進む
+  </button>
+</div>

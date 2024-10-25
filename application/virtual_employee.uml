@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/rikusawada/virtual_employee/application/src/main/java/com/virtual_employee/application</OriginalElement>
+  <nodes>
+    <node x="1175.3836800000001" y="2107.343725306884">com.virtual_employee.application.infra.inMemory.MockUserLoginAuthRepository</node>
+    <node x="-1191.331932490663" y="591.1852435998265">com.virtual_employee.application.security.filter.JwtAuthenticationFilter</node>
+    <node x="-1354.6562861749571" y="2353.130283918178">com.virtual_employee.application.domain.entity.MindSetResponseParams</node>
+    <node x="796.0643300859601" y="3527.284539594826">com.virtual_employee.application.infra.OpenAi.OpenAiApiService</node>
+    <node x="794.6603933790736" y="2912.999709417252">com.virtual_employee.application.domain.repository.IChatRequestRepository</node>
+    <node x="-1909.7400910077163" y="172.0828906183713">com.virtual_employee.application.Application</node>
+    <node x="1950.777027485768" y="2627.1599667224655">com.virtual_employee.application.infra.Postgres.mapper.IChatSettingMapper</node>
+    <node x="-315.23054065180077" y="2618.7730364994813">com.virtual_employee.application.domain.service.ISetVirtualEmployeeService</node>
+    <node x="693.6146439566462" y="1834.0329698859998">com.virtual_employee.application.domain.repository.IUserLoginAuthRepository</node>
+    <node x="-1727.0005877873064" y="2601.5193815061903">com.virtual_employee.application.domain.entity.MindRemoveRequestParams</node>
+    <node x="823.5643300859601" y="4199.206539202416">com.virtual_employee.application.dto.chatInfo.OpenAiApiModelDto</node>
+    <node x="-841.5577218396098" y="3939.1878079430758">com.virtual_employee.application.dto.chatInfo.ChatDto</node>
+    <node x="-1727.0005877873064" y="2076.741186330166">com.virtual_employee.application.domain.entity.MindFindRequestParams</node>
+    <node x="-1191.331932490663" y="121.40070416671855">com.virtual_employee.application.security.filter.JsonUsernamePasswordAuthenticationFilter</node>
+    <node x="815.782705366678" y="3753.7312293329187">com.virtual_employee.application.infra.OpenAi.controller.OpenAiApiController</node>
+    <node x="-1412.6562861749571" y="3671.2557345468304">com.virtual_employee.application.domain.entity.MessageFindResponseParams</node>
+    <node x="794.6603933790736" y="3168.8155968965966">com.virtual_employee.application.domain.repository.IChatResponseRepository</node>
+    <node x="-1709.5005877873066" y="172.0828906183713">com.virtual_employee.application.config.MyBatisConfig</node>
+    <node x="-1711.0005877873066" y="358.90405260060993">com.virtual_employee.application.config.WebSecurityConfig</node>
+    <node x="1197.8783379700199" y="1600.0">com.virtual_employee.application.infra.Postgres.repository.UserInfoRepository</node>
+    <node x="-1731.5005877873064" y="3283.399275313638">com.virtual_employee.application.domain.entity.MessageSendRequestParams</node>
+    <node x="726.0643300859601" y="3918.7534822930556">com.virtual_employee.application.infra.OpenAi.entity.OpenAiApiModelFindResponseParams</node>
+    <node x="1409.2606099754444" y="2906.365615917667">com.virtual_employee.application.infra.Postgres.repository.ChatRequestRepository</node>
+    <node x="-1386.656286174957" y="2588.9886926776326">com.virtual_employee.application.domain.entity.MindRemoveResponseParams</node>
+    <node x="-291.2942350432297" y="1628.0">com.virtual_employee.application.domain.service.IUserInfoService</node>
+    <node x="-101.32650899654345" y="4087.7300107477354">com.virtual_employee.application.infra.inMemory.InMemoryChatResponseRepository</node>
+    <node x="-794.5579290566034" y="1997.6791072727272">com.virtual_employee.application.controller.api.AuthenticateController</node>
+    <node x="-1723.5005877873064" y="2330.130283918178">com.virtual_employee.application.domain.entity.MindSetRequestParams</node>
+    <node x="-1728.0005877873064" y="3671.2557345468304">com.virtual_employee.application.domain.entity.MessageFindRequestParams</node>
+    <node x="-1554.5005877873066" y="54.26172863613263">com.virtual_employee.application.config.WebConfig</node>
+    <node x="677.1146439566462" y="1628.0">com.virtual_employee.application.domain.repository.IUserInfoRepository</node>
+    <node x="-1414.6562861749571" y="2089.2718751587236">com.virtual_employee.application.domain.entity.MindFindResponseParams</node>
+    <node x="1665.2665460869566" y="1850.5329698859998">com.virtual_employee.application.infra.Postgres.mapper.UserLoginAuthMapper</node>
+    <node x="-101.32650899654345" y="3918.7534822930556">com.virtual_employee.application.infra.inMemory.InMemoryChatSettingRepository</node>
+    <node x="1409.2606099754444" y="2599.1599667224655">com.virtual_employee.application.infra.Postgres.repository.ChatSettingRepository</node>
+    <node x="121.88472967409962" y="2622.1599667224655">com.virtual_employee.application.domain.service.classes.SetVirtualEmployeeService</node>
+    <node x="1409.6923648370498" y="3168.8155968965966">com.virtual_employee.application.infra.Postgres.repository.ChatResponseRepository</node>
+    <node x="1416.1923648370498" y="3385.265577875526">com.virtual_employee.application.infra.Postgres.repository.OpenAiApiModelRepository</node>
+    <node x="-1736.0005877873064" y="1314.910841654779">com.virtual_employee.application.dto.userInfo.SearchDto</node>
+    <node x="-857.0579290566034" y="2846.9689302057755">com.virtual_employee.application.controller.ChatGptWithVirtualEmployeeController</node>
+    <node x="105.38472967409962" y="3083.3155968965966">com.virtual_employee.application.domain.service.classes.ChatGptWithVirtualEmployeeService</node>
+    <node x="2122.6547542038934" y="1647.3437253068842">com.virtual_employee.application.domain.entity.UserLoginAuthInfo</node>
+    <node x="192.91020445670824" y="1614.0">com.virtual_employee.application.domain.service.classes.UserInfoService</node>
+    <node x="-423.7594515205841" y="514.4462946498792">com.virtual_employee.application.security.JwtProvider</node>
+    <node x="-389.85399004400017" y="1015.1803893260239">com.virtual_employee.application.domain.entity.UserInfo</node>
+    <node x="1950.777027485768" y="3182.8155968965966">com.virtual_employee.application.infra.Postgres.mapper.IChatResponseMapper</node>
+    <node x="-899.0579290566034" y="1602.5">com.virtual_employee.application.controller.UserInfoController</node>
+    <node x="-1060.5345573123461" y="379.29297388327257">com.virtual_employee.application.security.JWTAuthenticationSuccessHandler</node>
+    <node x="203.91020445670824" y="1834.0329698859998">com.virtual_employee.application.security.service.UserAuthService</node>
+    <node x="1665.2665460869566" y="1619.0">com.virtual_employee.application.infra.Postgres.mapper.UserInfoMapper</node>
+    <node x="-547.9109513396581" y="109.9007041667187">com.virtual_employee.application.security.SecurityConstants</node>
+    <node x="-1709.5005877873066" y="1013.0804969793921">com.virtual_employee.application.dto.userInfo.SearchForm</node>
+    <node x="-345.23054065180077" y="3145.8155968965966">com.virtual_employee.application.domain.service.IChatGptWithVirtualEmployeeService</node>
+    <node x="-423.7594515205841" y="379.29297388327245">com.virtual_employee.application.security.LoginResponseParams</node>
+    <node x="-1711.0005877873064" y="3018.185414314852">com.virtual_employee.application.domain.entity.MessageRemoveParams</node>
+    <node x="2001.777027485768" y="3413.265577875526">com.virtual_employee.application.infra.Postgres.mapper.IOpenAiApiModelMapper</node>
+    <node x="-1365.6562861749571" y="3283.399275313638">com.virtual_employee.application.domain.entity.MessageSendResponseParams</node>
+    <node x="-945.7457927830064" y="2295.8582145454548">com.virtual_employee.application.controller.api.MindController</node>
+    <node x="1197.8783379700199" y="1834.0329698859998">com.virtual_employee.application.infra.Postgres.repository.UserLoginAuthLoginAuthRepository</node>
+    <node x="1950.777027485768" y="2906.365615917667">com.virtual_employee.application.infra.Postgres.mapper.IChatRequestMapper</node>
+    <node x="677.1146439566462" y="1361.4901147826088">com.virtual_employee.application.infra.inMemory.InMemoryUserInfoRepository</node>
+    <node x="794.6603933790736" y="2655.1599667224655">com.virtual_employee.application.domain.repository.IChatSettingRepository</node>
+    <node x="858.0643300859601" y="3379.8378498567336">com.virtual_employee.application.domain.repository.IOpenAiApiModelRepository</node>
+    <node x="-1387.6562861749571" y="934.9179455019819">com.virtual_employee.application.dto.userInfo.RegisterDto</node>
+    <node x="-913.4120696397945" y="3510.11760363774">com.virtual_employee.application.controller.api.MessageController</node>
+    <node x="-320.83529939105574" y="3527.284539594826">com.virtual_employee.application.domain.service.IOpenAiApiService</node>
+    <node x="-1388.6562861749571" y="3046.1854143148526">com.virtual_employee.application.domain.entity.MessageRemoveResponseParams</node>
+    <node x="-101.32650899654345" y="4233.706539202416">com.virtual_employee.application.infra.inMemory.InMemoryChatRequestRepository</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.UserLoginAuthLoginAuthRepository" target="com.virtual_employee.application.infra.Postgres.mapper.UserLoginAuthMapper" relationship="TO_ONE">
+      <point x="164.0" y="0.0" />
+      <point x="-159.0" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.ChatGptWithVirtualEmployeeService" target="com.virtual_employee.application.domain.service.IChatGptWithVirtualEmployeeService" relationship="REALIZATION">
+      <point x="-182.5" y="-14.999596896596813" />
+      <point x="169.0" y="-14.999596896596813" />
+    </edge>
+    <edge source="com.virtual_employee.application.config.WebSecurityConfig" target="com.virtual_employee.application.security.JWTAuthenticationSuccessHandler" relationship="TO_ONE">
+      <point x="220.0" y="15.0" />
+      <point x="-225.5" y="31.611078717337364" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.entity.MessageFindResponseParams" target="com.virtual_employee.application.dto.chatInfo.ChatDto" relationship="TO_MANY">
+      <point x="2.8617495718208374E-4" y="98.5002654531695" />
+      <point x="-1242.156" y="3904.0" />
+      <point x="-666.058" y="3904.0" />
+      <point x="14.999721839609833" y="-236.4998079430752" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.UserInfoService" target="com.virtual_employee.application.domain.service.IUserInfoService" relationship="REALIZATION">
+      <point x="-174.5" y="0.0" />
+      <point x="174.5" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.OpenAi.controller.OpenAiApiController" target="com.virtual_employee.application.domain.service.IOpenAiApiService" relationship="TO_ONE">
+      <point x="-160.99970536667797" y="-4.731229332918701" />
+      <point x="408.5" y="3804.0" />
+      <point x="408.5" y="3481.0" />
+      <point x="-131.835" y="3481.0" />
+      <point x="2.993910557336221E-4" y="-38.499539594826274" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.UserInfoRepository" target="com.virtual_employee.application.domain.repository.IUserInfoRepository" relationship="REALIZATION">
+      <point x="-3.3797001992752485E-4" y="-78.0" />
+      <point x="1372.378" y="1569.0" />
+      <point x="874.5" y="1569.0" />
+      <point x="22.885356043353795" y="-50.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.ChatSettingRepository" target="com.virtual_employee.application.domain.repository.IChatSettingRepository" relationship="REALIZATION">
+      <point x="3.900245555996662E-4" y="89.50003327753438" />
+      <point x="1573.261" y="2813.0" />
+      <point x="818.0" y="2813.0" />
+      <point x="-140.66039337907364" y="61.500033277534385" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.InMemoryChatResponseRepository" target="com.virtual_employee.application.domain.repository.IChatResponseRepository" relationship="REALIZATION">
+      <point x="183.49950899654345" y="14.99998925226464" />
+      <point x="693.564" y="4166.73" />
+      <point x="693.564" y="3312.0" />
+      <point x="978.16" y="3312.0" />
+      <point x="-3.9337907367098524E-4" y="50.00040310340319" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.UserInfoController" target="com.virtual_employee.application.domain.entity.UserInfo" relationship="CREATE">
+      <point x="-7.094339662216953E-5" y="-75.5" />
+      <point x="-681.058" y="1569.0" />
+      <point x="-258.854" y="1569.0" />
+      <point x="-9.955999814792449E-6" y="259.4996106739761" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.ChatSettingRepository" target="com.virtual_employee.application.infra.Postgres.mapper.IChatSettingMapper" relationship="TO_ONE">
+      <point x="164.0" y="0.0" />
+      <point x="-164.0" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.SetVirtualEmployeeService" target="com.virtual_employee.application.domain.repository.IChatSettingRepository" relationship="TO_ONE">
+      <point x="2.7032590037379123E-4" y="78.00003327753438" />
+      <point x="287.885" y="2846.0" />
+      <point x="958.66" y="2846.0" />
+      <point x="-3.9337907367098524E-4" y="61.500033277534385" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.ChatResponseRepository" target="com.virtual_employee.application.infra.Postgres.mapper.IChatResponseMapper" relationship="TO_ONE">
+      <point x="183.5" y="-14.0" />
+      <point x="-183.5" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.api.MessageController" target="com.virtual_employee.application.domain.entity.MessageRemoveResponseParams" relationship="CREATE">
+      <point x="-252.0" y="0.0" />
+      <point x="-1383.1562861749571" y="3599.61760363774" />
+      <point x="-153.0" y="98.5" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.InMemoryUserInfoRepository" target="com.virtual_employee.application.domain.repository.IUserInfoRepository" relationship="REALIZATION">
+      <point x="22.885356043353795" y="63.99988521739124" />
+      <point x="22.885356043353795" y="-50.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.api.MessageController" target="com.virtual_employee.application.domain.entity.MessageSendResponseParams" relationship="CREATE">
+      <point x="0.0" y="-89.5" />
+      <point x="-661.4120696397945" y="3387.3378498567336" />
+      <point x="147.0" y="5.438574543095456" />
+    </edge>
+    <edge source="com.virtual_employee.application.security.JWTAuthenticationSuccessHandler" target="com.virtual_employee.application.security.LoginResponseParams" relationship="CREATE">
+      <point x="225.5" y="-1.1368683772161603E-13" />
+      <point x="-136.0" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.security.service.UserAuthService" target="com.virtual_employee.application.domain.repository.IUserLoginAuthRepository" relationship="TO_ONE">
+      <point x="163.5" y="-14.0" />
+      <point x="-158.0" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.OpenAi.OpenAiApiService" target="com.virtual_employee.application.domain.repository.IOpenAiApiModelRepository" relationship="TO_ONE">
+      <point x="0.0" y="-66.5" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.MockUserLoginAuthRepository" target="com.virtual_employee.application.domain.repository.IUserLoginAuthRepository" relationship="REALIZATION">
+      <point x="3.199999998741987E-4" y="-40.9997253068841" />
+      <point x="1333.384" y="2026.0" />
+      <point x="851.615" y="2026.0" />
+      <point x="3.560433538041252E-4" y="27.000030114000083" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.OpenAiApiModelRepository" target="com.virtual_employee.application.domain.repository.IOpenAiApiModelRepository" relationship="REALIZATION">
+      <point x="-177.0" y="-33.42772801879255" />
+      <point x="134.0" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.OpenAi.controller.OpenAiApiController" target="com.virtual_employee.application.infra.OpenAi.entity.OpenAiApiModelFindResponseParams" relationship="CREATE">
+      <point x="-19.71837528071785" y="55.0" />
+      <point x="0.0" y="-98.5" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.OpenAi.entity.OpenAiApiModelFindResponseParams" target="com.virtual_employee.application.dto.chatInfo.OpenAiApiModelDto" relationship="TO_MANY">
+      <point x="0.0" y="98.5" />
+      <point x="0.0" y="-121.5" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.ChatGptWithVirtualEmployeeController" target="com.virtual_employee.application.domain.service.IChatGptWithVirtualEmployeeService" relationship="TO_ONE">
+      <point x="175.99992905660338" y="22.72696350051865" />
+      <point x="-386.0" y="2956.695893706294" />
+      <point x="-386.0" y="3218.816" />
+      <point x="-169.00045934819923" y="4.03103403186833E-4" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.ChatGptWithVirtualEmployeeService" target="com.virtual_employee.application.domain.repository.IChatRequestRepository" relationship="TO_ONE">
+      <point x="15.000270325900374" y="-135.5" />
+      <point x="302.885" y="2985.999709417252" />
+      <point x="-164.0" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.ChatResponseRepository" target="com.virtual_employee.application.domain.repository.IChatResponseRepository" relationship="REALIZATION">
+      <point x="-183.5003648370498" y="4.03103403186833E-4" />
+      <point x="1220.564" y="3246.816" />
+      <point x="1220.564" y="3312.0" />
+      <point x="978.16" y="3312.0" />
+      <point x="-3.9337907367098524E-4" y="50.00040310340319" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.InMemoryChatSettingRepository" target="com.virtual_employee.application.domain.repository.IChatSettingRepository" relationship="REALIZATION">
+      <point x="-164.00049100345655" y="-4.8229305548375123E-4" />
+      <point x="-118.827" y="3994.253" />
+      <point x="-118.827" y="4459.707" />
+      <point x="1205.564" y="4459.707" />
+      <point x="1205.564" y="2813.0" />
+      <point x="818.0" y="2813.0" />
+      <point x="-140.66039337907364" y="61.500033277534385" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.api.MessageController" target="com.virtual_employee.application.domain.entity.MessageFindResponseParams" relationship="CREATE">
+      <point x="-252.0" y="79.13813090909025" />
+      <point x="170.5" y="-91.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.api.MindController" target="com.virtual_employee.application.domain.entity.MindFindResponseParams" relationship="CREATE">
+      <point x="0.0" y="-78.0" />
+      <point x="-709.7457927830064" y="2181.843725306884" />
+      <point x="158.0" y="-19.928149851839407" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.ChatGptWithVirtualEmployeeController" target="com.virtual_employee.application.domain.service.ISetVirtualEmployeeService" relationship="TO_ONE">
+      <point x="175.99992905660338" y="-3.6499481211649254E-5" />
+      <point x="-394.0" y="2933.9688937062942" />
+      <point x="-394.0" y="2668.773" />
+      <point x="-139.00045934819923" y="-3.6499481211649254E-5" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.api.MindController" target="com.virtual_employee.application.domain.entity.MindSetResponseParams" relationship="CREATE">
+      <point x="-236.0" y="0.0" />
+      <point x="128.0" y="-77.77206937272331" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.InMemoryChatSettingRepository" target="com.virtual_employee.application.dto.chatInfo.ChatDto" relationship="CREATE">
+      <point x="-4.910034565455135E-4" y="-75.50048229305548" />
+      <point x="62.673" y="3804.0" />
+      <point x="-681.058" y="3804.0" />
+      <point x="-2.78160390166704E-4" y="-236.4998079430752" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.OpenAi.OpenAiApiService" target="com.virtual_employee.application.domain.service.IOpenAiApiService" relationship="REALIZATION">
+      <point x="-196.0" y="-28.0" />
+      <point x="189.0" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.UserInfoService" target="com.virtual_employee.application.domain.repository.IUserInfoRepository" relationship="TO_ONE">
+      <point x="174.5" y="0.0" />
+      <point x="-174.5" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.SetVirtualEmployeeService" target="com.virtual_employee.application.domain.service.ISetVirtualEmployeeService" relationship="REALIZATION">
+      <point x="-166.0" y="-31.38693022298412" />
+      <point x="139.0" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.UserInfoController" target="com.virtual_employee.application.dto.userInfo.SearchDto" relationship="CREATE">
+      <point x="-218.0" y="15.0" />
+      <point x="131.0" y="26.589158345220994" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.UserInfoRepository" target="com.virtual_employee.application.infra.Postgres.mapper.UserInfoMapper" relationship="TO_ONE">
+      <point x="174.5" y="-9.0" />
+      <point x="-174.5" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.UserLoginAuthLoginAuthRepository" target="com.virtual_employee.application.domain.repository.IUserLoginAuthRepository" relationship="REALIZATION">
+      <point x="-3.3797001992752485E-4" y="55.00003011400008" />
+      <point x="1361.878" y="2026.0" />
+      <point x="851.615" y="2026.0" />
+      <point x="3.560433538041252E-4" y="27.000030114000083" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.MockUserLoginAuthRepository" target="com.virtual_employee.application.domain.entity.UserLoginAuthInfo" relationship="CREATE">
+      <point x="158.0" y="0.0" />
+      <point x="-168.0" y="230.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.ChatRequestRepository" target="com.virtual_employee.application.infra.Postgres.mapper.IChatRequestMapper" relationship="TO_ONE">
+      <point x="164.0" y="-28.0" />
+      <point x="-164.0" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.ChatGptWithVirtualEmployeeService" target="com.virtual_employee.application.domain.service.IOpenAiApiService" relationship="TO_ONE">
+      <point x="2.7032590037379123E-4" y="135.5004031034032" />
+      <point x="287.885" y="3481.0" />
+      <point x="-131.835" y="3481.0" />
+      <point x="2.993910557336221E-4" y="-38.499539594826274" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.ChatGptWithVirtualEmployeeService" target="com.virtual_employee.application.dto.chatInfo.ChatDto" relationship="CREATE">
+      <point x="-182.49972967409963" y="4.03103403186833E-4" />
+      <point x="82.0" y="3218.816" />
+      <point x="82.0" y="3804.0" />
+      <point x="-681.058" y="3804.0" />
+      <point x="-2.78160390166704E-4" y="-236.4998079430752" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.UserInfoController" target="com.virtual_employee.application.dto.userInfo.RegisterDto" relationship="CREATE">
+      <point x="-218.0" y="0.0" />
+      <point x="-1256.6562861749571" y="1678.0" />
+      <point x="0.0" y="259.5" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.api.MindController" target="com.virtual_employee.application.domain.entity.MindRemoveResponseParams" relationship="CREATE">
+      <point x="-164.81213627359693" y="78.0" />
+      <point x="-874.5579290566034" y="2687.4886926776326" />
+      <point x="142.5" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.security.JWTAuthenticationSuccessHandler" target="com.virtual_employee.application.security.JwtProvider" relationship="TO_ONE">
+      <point x="-4.4268765384458675E-4" y="41.00002611672744" />
+      <point x="-835.035" y="488.0" />
+      <point x="-271.759" y="488.0" />
+      <point x="4.515205840789349E-4" y="-87.00029464987915" />
+    </edge>
+    <edge source="com.virtual_employee.application.security.filter.JwtAuthenticationFilter" target="com.virtual_employee.application.security.JwtProvider" relationship="TO_ONE">
+      <point x="-6.750933710009122E-5" y="-41.000243599826604" />
+      <point x="-984.332" y="488.0" />
+      <point x="-271.759" y="488.0" />
+      <point x="4.515205840789349E-4" y="-87.00029464987915" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.entity.MindFindResponseParams" target="com.virtual_employee.application.dto.chatInfo.ChatDto" relationship="TO_MANY">
+      <point x="158.00028617495718" y="5.072124841276491" />
+      <point x="-967.5" y="2206.844" />
+      <point x="-967.5" y="3904.0" />
+      <point x="-666.058" y="3904.0" />
+      <point x="14.999721839609833" y="-236.4998079430752" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.MockUserLoginAuthRepository" target="com.virtual_employee.application.domain.entity.UserLoginAuthInfo" relationship="TO_MANY">
+      <point x="158.0" y="15.0" />
+      <point x="-168.0" y="245.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.OpenAiApiModelRepository" target="com.virtual_employee.application.infra.Postgres.mapper.IOpenAiApiModelMapper" relationship="TO_ONE">
+      <point x="177.0" y="0.0" />
+      <point x="-132.5" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.Postgres.repository.ChatRequestRepository" target="com.virtual_employee.application.domain.repository.IChatRequestRepository" relationship="REALIZATION">
+      <point x="-163.9996099754444" y="3.840823328573606E-4" />
+      <point x="1220.564" y="3007.366" />
+      <point x="1220.564" y="3099.0" />
+      <point x="958.66" y="3099.0" />
+      <point x="-3.9337907367098524E-4" y="73.00029058274822" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.ChatGptWithVirtualEmployeeService" target="com.virtual_employee.application.domain.repository.IChatSettingRepository" relationship="TO_ONE">
+      <point x="2.7032590037379123E-4" y="-135.4995968965968" />
+      <point x="287.885" y="2846.0" />
+      <point x="958.66" y="2846.0" />
+      <point x="-3.9337907367098524E-4" y="61.500033277534385" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.UserInfoController" target="com.virtual_employee.application.domain.service.IUserInfoService" relationship="TO_ONE">
+      <point x="218.0" y="0.0" />
+      <point x="-174.5" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.ChatGptWithVirtualEmployeeService" target="com.virtual_employee.application.domain.repository.IChatResponseRepository" relationship="TO_ONE">
+      <point x="182.5" y="0.0" />
+      <point x="-183.5" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.InMemoryChatResponseRepository" target="com.virtual_employee.application.dto.chatInfo.ChatDto" relationship="CREATE">
+      <point x="183.49950899654345" y="-1.0747735359473154E-5" />
+      <point x="384.0" y="4151.73" />
+      <point x="384.0" y="3804.0" />
+      <point x="-681.058" y="3804.0" />
+      <point x="-2.78160390166704E-4" y="-236.4998079430752" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.api.MessageController" target="com.virtual_employee.application.domain.service.IChatGptWithVirtualEmployeeService" relationship="TO_ONE">
+      <point x="252.0000696397945" y="3.963622598348593E-4" />
+      <point x="-386.0" y="3599.618" />
+      <point x="-386.0" y="3218.816" />
+      <point x="-169.00045934819923" y="4.03103403186833E-4" />
+    </edge>
+    <edge source="com.virtual_employee.application.controller.api.MindController" target="com.virtual_employee.application.domain.service.ISetVirtualEmployeeService" relationship="TO_ONE">
+      <point x="235.99979278300646" y="-2.145454545825487E-4" />
+      <point x="-394.0" y="2373.858" />
+      <point x="-394.0" y="2668.773" />
+      <point x="-139.00045934819923" y="-3.6499481211649254E-5" />
+    </edge>
+    <edge source="com.virtual_employee.application.config.WebSecurityConfig" target="com.virtual_employee.application.security.filter.JsonUsernamePasswordAuthenticationFilter" relationship="CREATE">
+      <point x="220.0" y="0.0" />
+      <point x="-1078.0345573123461" y="436.90405260060993" />
+      <point x="-152.20262482168323" y="64.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.InMemoryChatRequestRepository" target="com.virtual_employee.application.dto.chatInfo.ChatDto" relationship="CREATE">
+      <point x="163.99950899654345" y="4.607975843100576E-4" />
+      <point x="384.0" y="4320.707" />
+      <point x="384.0" y="3804.0" />
+      <point x="-681.058" y="3804.0" />
+      <point x="-2.78160390166704E-4" y="-236.4998079430752" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.InMemoryChatRequestRepository" target="com.virtual_employee.application.domain.repository.IChatRequestRepository" relationship="REALIZATION">
+      <point x="163.99950899654345" y="15.00046079758431" />
+      <point x="708.564" y="4335.707" />
+      <point x="708.564" y="3099.0" />
+      <point x="958.66" y="3099.0" />
+      <point x="-3.9337907367098524E-4" y="73.00029058274822" />
+    </edge>
+    <edge source="com.virtual_employee.application.config.WebSecurityConfig" target="com.virtual_employee.application.security.filter.JwtAuthenticationFilter" relationship="TO_ONE">
+      <point x="-17.0" y="78.0" />
+      <point x="-1508.0005877873066" y="632.1852435998265" />
+      <point x="-207.0" y="0.0" />
+    </edge>
+    <edge source="com.virtual_employee.application.infra.inMemory.InMemoryUserInfoRepository" target="com.virtual_employee.application.domain.entity.UserInfo" relationship="CREATE">
+      <point x="3.560433538041252E-4" y="63.99988521739124" />
+      <point x="851.615" y="1569.0" />
+      <point x="-258.854" y="1569.0" />
+      <point x="-9.955999814792449E-6" y="259.4996106739761" />
+    </edge>
+    <edge source="com.virtual_employee.application.domain.service.classes.SetVirtualEmployeeService" target="com.virtual_employee.application.dto.chatInfo.ChatDto" relationship="CREATE">
+      <point x="-165.99972967409963" y="3.3277534384978935E-5" />
+      <point x="82.0" y="2700.16" />
+      <point x="82.0" y="3804.0" />
+      <point x="-681.058" y="3804.0" />
+      <point x="-2.78160390166704E-4" y="-236.4998079430752" />
+    </edge>
+  </edges>
+  <settings layout="階層型コンパクト" zoom="0.31551838567555346" showDependencies="true" x="79.08407832167904" y="3119.0560000000005" />
+  <SelectedNodes />
+  <Categories>
+    <Category>コンストラクター</Category>
+    <Category>フィールド</Category>
+    <Category>メソッド</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>protected</VISIBILITY>
+</Diagram>
+

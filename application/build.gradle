@@ -1,0 +1,69 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.1.0'
+	id 'io.spring.dependency-management' version '1.1.4'
+//	id 'checkstyle'
+}
+
+group = 'com.pokmon_illustrated_guide'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'com.theokanning.openai-gpt3-java:api:0.18.2'
+	implementation 'com.theokanning.openai-gpt3-java:client:0.18.2'
+	implementation 'com.theokanning.openai-gpt3-java:service:0.18.2'
+	implementation 'javax.xml.bind:jaxb-api:2.3.1'
+	implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
+	implementation 'io.jsonwebtoken:jjwt:0.9.0'
+	implementation 'javax.servlet:javax.servlet-api:4.0.1'
+	implementation 'com.vladsch.flexmark:flexmark-all:0.64.0'
+	implementation 'com.google.code.gson:gson:2.10'
+	implementation "com.deepl.api:deepl-java:1.5.0"
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'org.postgresql:postgresql'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+//	checkstyle 'com.puppycrawl.tools:checkstyle:8.45'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+springBoot {
+	apply plugin: 'application'
+	mainClassName = 'com.pokmon_illustrated_guide.application.Application'
+}
+
+bootRun {
+	jvmArgs "-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005"
+}
+
+//checkstyle {
+//	// Googleのコーディング規約を適用
+//	configFile = file('./config/google_checks.xml')
+////	toolVersion = '8.42'
+//}

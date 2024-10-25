@@ -1,0 +1,44 @@
+version: "3"
+volumes: # ※ホストOSで永続化
+    postgres_data:
+        driver: 'local'
+services:
+  api:
+    container_name: api
+    image: eclipse-temurin:17
+    ports:
+      - 8080:8080
+      - 5005:5005  # デバッグポートを追加
+    volumes:
+      - ./application:/application
+    working_dir: /application
+    tty: true
+    depends_on:
+      - db
+
+  db:
+    build:
+      context: .
+      dockerfile: ./infra/postgresql/Dockerfile
+    container_name: "appdb"
+    environment:
+      POSTGRES_PASSWORD: postgres  #スーパーユーザ(postgres)のパスワード
+      POSTGRES_USER: postgres      #ユーザアカウント
+      POSTGRES_DB: appdb           #DB名
+      TZ: "Asia/Tokyo"
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - 15432:5432  #ホストOSの15432をコンテナ内の5432にマッピング
+    volumes:
+      - ./infra/postgresql/volumes:/var/lib/postgresql/data    # ※ホストOSで永続化
+      - ./infra/postgresql/dumpdata:/docker-entrypoint-initdb.d
+
+  front:
+    container_name: app
+    build:
+      dockerfile: infra/node/Dockerfile
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./frontend:/src
+    tty: true

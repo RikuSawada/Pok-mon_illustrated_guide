@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ユーザー検索画面</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<form th:action="@{/searchUserInfo}" method="GET" th:object="${searchCondition}">
+    <div class="container　container-m">
+        <div th:if="${infoMessage}" class="row">
+            <div class="col-md-12 m-3">
+                <div class="p-3 mb-2 bg-success text-white">
+                    <label th:text="${infoMessage}"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 m-3">
+                <label>名前</label>
+                <input type="text" name="nameInsert" th:value="*{getName}" placeholder="鈴木　太郎">
+                <p>※フルネームの場合姓と名の間にスペースを入れてください</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 m-3">
+                <label>メールアドレス</label>
+                <input type="text" name="emailInsert" th:value="*{getEmail}"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit">検索</button>
+            </div>
+        </div>
+        <div>
+            <h1>検索結果</h1>
+            <div th:if="${#lists.isEmpty(searchUserResult)}" class="row">
+                <p>一致するデータは見つかりませんでした。</p>
+            </div>
+            <table class="table table-success table-striped table-bordered">
+                <thead class="table-light">
+                <tr>
+                    <th>名前（漢字）</th>
+                    <th>名前（カナ）</th>
+                    <th>メールアドレス</th>
+                </tr>
+                </thead>
+                <tr th:each="row : ${searchUserResult}">
+                    <td th:text="${row.nameKanji}"></td>
+                    <td th:text="${row.nameKana}"></td>
+                    <td th:text="${row.email}"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</form>
+
+
+</body>
+</html>

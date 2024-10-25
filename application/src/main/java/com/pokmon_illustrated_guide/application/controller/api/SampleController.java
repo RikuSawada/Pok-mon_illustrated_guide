@@ -25,13 +25,13 @@ public class SampleController {
   @GetMapping("translate")
   public SampleResponseParams translate(@Valid @ModelAttribute SampleRequestParams params) {
     logger.info("/api/sample/translate:"+params);
-    return new SampleResponseParams(sampleService.translate(params.getJapaneseMessage()));
+    return new SampleResponseParams(sampleService.translate());
   }
 
   @PostMapping("translate")
   public SampleResponseParams translatePost(@Valid @RequestBody SampleRequestParams params) {
     logger.info("/api/sample/translate:"+params);
-    return new SampleResponseParams(sampleService.translate(params.getJapaneseMessage()));
+    return new SampleResponseParams(sampleService.translate());
   }
 
 }

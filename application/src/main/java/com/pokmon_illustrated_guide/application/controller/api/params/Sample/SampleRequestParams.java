@@ -8,8 +8,5 @@ import lombok.Data;
 import lombok.Getter;
 
 @Data
-@Getter
 public class SampleRequestParams {
-  @NotEmpty(message = "japaneseMessage cannot be empty")
-  private String japaneseMessage;
 }
